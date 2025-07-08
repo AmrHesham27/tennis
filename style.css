@@ -359,7 +359,7 @@ a:hover {
   }
 
   .footer-newsletter {
-    padding: 40px 30px 50px 30px;
+    padding: 40px 30px 40px 30px;
   }
 
   .footer-menus {
@@ -1035,6 +1035,7 @@ a:hover {
 }
 
 .featured-video {
+  margin-bottom: 40px;
   flex: 1;
 }
 
@@ -1045,6 +1046,10 @@ a:hover {
 
 .featured-video .video-info {
   padding-top: 10px;
+}
+
+.video-info {
+  margin-bottom: 15px;
 }
 
 .video-info h4 {
@@ -1066,12 +1071,13 @@ a:hover {
 
 .side-video {
   display: flex;
+  flex-direction: row-reverse;
   gap: 10px;
 }
 
 .side-video img {
-  width: 100px;
-  height: 70px;
+  width: 60%;
+  height: auto;
   object-fit: cover;
   border-radius: 6px;
   flex-shrink: 0;
@@ -1104,7 +1110,6 @@ a:hover {
 .date {
   font-size: 0.7rem;
   color: #ccc;
-  padding-left: 10px;
 }
 
 hr {
@@ -1137,8 +1142,8 @@ hr {
   }
 
   .side-video img {
-    width: 120px;
-    height: 80px;
+    width: 60%;
+    height: auto;
   }
 
   .side-video .video-info h4 {
@@ -1156,15 +1161,16 @@ hr {
 }
 
 @media (max-width: 768px) {
-  .side-video {
-    display: flex;
-    flex-direction: column;
+  .side-video img {
+    width: 40%;
   }
 
-  .side-video img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  .side-video .video-info {
+    width: 60%;
+  }
+
+  .side-video .video-info h4 {
+    font-size: 1.2rem;
   }
 }
 
@@ -1195,8 +1201,8 @@ hr {
   }
 
   .side-video img {
-    width: 120px;
-    height: 80px;
+    width: 60%;
+    height: auto;
   }
 
   .side-video .video-info h4 {
@@ -1223,7 +1229,6 @@ hr {
   text-align: center;
   position: relative;
   margin-top: 60px;
-  margin-bottom: 40px;
 }
 
 .section-title {
@@ -1370,20 +1375,19 @@ hr {
 
 /* Newsletter Section */
 .footer-newsletter {
-  background: #fff;
-  padding: 30px 20px 40px 20px;
+  background: var(--secondary-green);
+  padding: 40px 20px 40px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border-bottom: 1px solid #e3e3e3;
   gap: 1rem;
 }
 
 .newsletter-content h3 {
   margin: 0 0 8px;
   font-size: 1.3rem;
-  color: var(--primary-green);
+  color: var(--white);
 }
 
 .newsletter-content p {
@@ -1433,13 +1437,13 @@ hr {
 }
 
 .container-footer-newsletter {
-  background: var(--white);
+  background: var(--secondary-green);
 }
 
 /* Tablet Newsletter */
 @media (min-width: 768px) and (max-width: 1023px) {
   .footer-newsletter {
-    padding: 40px 30px 50px 30px;
+    padding: 40px 30px 40px 30px;
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
@@ -1468,7 +1472,7 @@ hr {
 /* Desktop Newsletter */
 @media (min-width: 1024px) {
   .footer-newsletter {
-    padding: 40px 40px 60px 40px;
+    padding: 40px;
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
@@ -1712,7 +1716,7 @@ hr {
   }
 
   .footer-newsletter {
-    padding: 25px 15px 35px 15px;
+    padding: 25px 15px 25px 15px;
   }
 
   .footer-menus {
