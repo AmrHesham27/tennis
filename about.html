@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"
+    />
+    <title>The Break Point Newsletter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="main-header">
+      <div class="container header-flex">
+        <a href="#" class="logo-link">
+          <img
+            src="assets/logo.png"
+            alt="The Break Point Logo"
+            class="logo-img"
+          />
+        </a>
+        <nav class="nav" id="mainNav">
+          <a href="#" class="nav-link">Home</a>
+          <a href="#" class="nav-link">About</a>
+          <a href="#" class="nav-link">Subscribe</a>
+        </nav>
+        <div class="header-actions">
+          <div class="search-container">
+            <button class="search-icon-btn" id="searchToggle">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 21L16.514 16.506L21 21ZM19 10.5C19 15.194 15.194 19 10.5 19C5.806 19 2 15.194 2 10.5C2 5.806 5.806 2 10.5 2C15.194 2 19 5.806 19 10.5Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+      <div class="search-expanded" id="searchExpanded">
+        <div class="container">
+          <input
+            type="text"
+            placeholder="Search articles..."
+            class="search-input"
+            id="searchInput"
+            name="search"
+          />
+          <button class="search-close-btn" id="searchClose">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 6L6 18M6 6L18 18"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- END OF HEADER -->
+
+    <!-- About Hero section -->
+    <section class="container about-hero-section">
+      <div class="hero-image-wrapper">
+        <img src="assets/images/600x300.png" class="about-hero-image" alt="Main article image" />
+          <div class="image-overlay">
+            We deliver quick and insightful updates about tennis.
+        </div>
+    </section>
+    <!-- End of About Hero section -->
+
+    <!-- About section -->
+    <section class="container editorial-section">
+      <div class="editorial-intro">
+        <img src="assets/logo.png" alt="Logo" class="editorial-logo" />
+        <p class="editorial-description">
+          Our newsletter delivers quick and insightful updates about business,
+          tech, and culture—every weekday morning.
+        </p>
+        <p class="editorial-description">
+          We are part of
+          <a href="#" class="highlight-link">YourCompany Inc.</a>
+        </p>
+        <div class="social-icons about-social-icons">
+          <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
+          <a href="#"><img src="assets/icons/twitter.svg" alt="Twitter"></a>
+          <a href="#"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
+          <a href="#"><img src="assets/icons/discord.svg" alt="Discord"></a>
+        </div>
+      </div>
+
+      <div class="staff-list">
+        <div class="staff-group">
+          <p>
+            <strong>Executive Editor:</strong>
+            <a href="#">Jane Smith</a>
+          </p>
+        </div>
+        <div class="staff-group">
+          <p>
+            <strong>News Editors:</strong> <a href="#">Ali Khan</a>,
+            <a href="#">Nina Patel</a>
+          </p>
+        </div>
+        <div class="staff-group">
+          <p>
+            <strong>Writers:</strong> <a href="#">Michael Lee</a>,
+            <a href="#">Sara Wong</a>, <a href="#">Carlos Ruiz</a>
+          </p>
+        </div>
+        <div class="staff-group">
+          <p><strong>Copy Editor:</strong> <a href="#">Emily Brown</a></p>
+        </div>
+        <div class="see-full-team">
+          <a href="#" class="highlight-link">See Full Team →</a>
+        </div>
+      </div>
+    </section>
+    <!-- End of About section -->
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container-footer-newsletter">
+        <div class="container footer-newsletter">
+          <div class="newsletter-content">
+            <h3>Never miss a story.</h3>
+            <p>
+              Subscribe for daily news, trends & insights—delivered free every
+              weekday.
+            </p>
+          </div>
+          <form class="newsletter-form">
+            <input
+              type="email"
+              placeholder="Your email address"
+              required
+              name="email"
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="container-footer-menus">
+        <div class="container footer-menus">
+          <div class="menu-col logo-col">
+            <img
+              src="assets/logo.png"
+              alt="Logo"
+              class="footer-logo"
+              loading="lazy"
+            />
+            <p class="footer-description">
+              The daily newsletter for bold business and tech minds. Delivered
+              to your inbox, every morning.
+            </p>
+          </div>
+
+          <div class="menu-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Advertise</a></li>
+            </ul>
+          </div>
+
+          <div class="menu-col">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Articles</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Spam FAQs</a></li>
+            </ul>
+          </div>
+
+          <div class="menu-col social-col">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#"
+                ><img
+                  src="assets/icons/facebook.svg"
+                  alt="Facebook"
+                  loading="lazy"
+              /></a>
+              <a href="#"
+                ><img
+                  src="assets/icons/twitter.svg"
+                  alt="Twitter"
+                  loading="lazy"
+              /></a>
+              <a href="#"
+                ><img
+                  src="assets/icons/instagram.svg"
+                  alt="Instagram"
+                  loading="lazy"
+              /></a>
+              <a href="#"
+                ><img
+                  src="assets/icons/discord.svg"
+                  alt="Discord"
+                  loading="lazy"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container footer-bottom">
+          <p>© 2025 Amr Mahmoud. All rights reserved.</p>
+          <ul class="legal-links">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- END OF FOOTER -->
+  </body>
+</html>
