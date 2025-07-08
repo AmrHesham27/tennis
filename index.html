@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"
+    />
+    <title>The Break Point Newsletter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script
+      defer
+      src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="main-header">
+      <div class="container header-flex">
+        <a href="#" class="logo-link">
+          <img
+            src="assets/logo.png"
+            alt="The Break Point Logo"
+            class="logo-img"
+          />
+        </a>
+        <nav class="nav" id="mainNav">
+          <a href="#" class="nav-link">Home</a>
+          <a href="#" class="nav-link">About</a>
+          <a href="#" class="nav-link">Subscribe</a>
+        </nav>
+        <div class="header-actions">
+          <div class="search-container">
+            <button class="search-icon-btn" id="searchToggle">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 21L16.514 16.506L21 21ZM19 10.5C19 15.194 15.194 19 10.5 19C5.806 19 2 15.194 2 10.5C2 5.806 5.806 2 10.5 2C15.194 2 19 5.806 19 10.5Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+      <div class="search-expanded" id="searchExpanded">
+        <div class="container">
+          <input
+            type="text"
+            placeholder="Search articles..."
+            class="search-input"
+            id="searchInput"
+            name="search"
+          />
+          <button class="search-close-btn" id="searchClose">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 6L6 18M6 6L18 18"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="container hero-content">
+        <h2 class="hero-title">Get Smarter on Tennis</h2>
+        <p class="hero-subtitle">
+          Join The Break Point newsletter for weekly tennis insights, news, and
+          stories—straight to your inbox.
+        </p>
+        <form class="signup-form">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            required
+            class="email-input"
+          />
+          <button type="submit" class="hero-btn">Subscribe Now</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FEATURED LATEST SECTION -->
+    <section class="featured-latest">
+      <div class="container">
+        <div class="main-article">
+          <div class="image-wrapper">
+            <img src="assets/images/600x300.png" alt="Main article image" />
+            <div class="image-overlay">
+              Main Match Analysis: Djokovic vs. Alcaraz
+            </div>
+          </div>
+
+          <h2><a href="#">Main Match Analysis: Djokovic vs. Alcaraz</a></h2>
+          <p class="excerpt">
+            A deep dive into yesterday's thrilling semi-final clash and what it
+            means for Wimbledon.
+          </p>
+          <p class="author">By <a href="#">James Rally</a> | 2 days ago</p>
+        </div>
+
+        <aside class="latest-stories">
+          <h2>The Latest</h2>
+
+          <div class="preview-content">
+            <a class="preview-eyebrow" href="#">Government</a>
+            <h3 class="preview-headline">
+              <a href="#">What the GOP's mega law means for your wallet</a>
+            </h3>
+            <span class="preview-byline"
+              ><a href="#">Brendan Cosgrove</a> | about 3 hours ago</span
+            >
+          </div>
+
+          <div class="preview-content">
+            <a class="preview-eyebrow" href="#">Tennis</a>
+            <h3 class="preview-headline">
+              <a href="#">How Sinner is Changing the Game</a>
+            </h3>
+            <span class="preview-byline">
+              <a href="#">Alicia Mendez</a> | 1 hour ago
+            </span>
+          </div>
+
+          <div class="preview-content">
+            <a class="preview-eyebrow" href="#">Technology</a>
+            <h3 class="preview-headline">
+              <a href="#">Racket Tech: What Pros Are Using in 2025</a>
+            </h3>
+            <span class="preview-byline">
+              <a href="#">Marcus Long</a> | 2 days ago
+            </span>
+          </div>
+
+          <div class="preview-content">
+            <a class="preview-eyebrow" href="#">Tennis</a>
+            <h3 class="preview-headline">
+              <a href="#">How Sinner is Changing the Game</a>
+            </h3>
+            <span class="preview-byline">
+              <a href="#">Alicia Mendez</a> | 1 hour ago
+            </span>
+          </div>
+
+          <div class="preview-content">
+            <a class="preview-eyebrow" href="#">Tennis</a>
+            <h3 class="preview-headline">
+              <a href="#">How Sinner is Changing the Game</a>
+            </h3>
+            <span class="preview-byline">
+              <a href="#">Alicia Mendez</a> | 1 hour ago
+            </span>
+          </div>
+
+          <a href="#" class="show-more-btn">All Stories</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- articles section -->
+    <section class="container articles-section">
+      <div class="articles-header">
+        <h2 class="section-title">Articles</h2>
+        <a href="#" class="show-more-btn">Show More</a>
+      </div>
+      <div class="articles-grid">
+        <a href="article-details.html" class="article-card">
+          <div class="article-card">
+            <div class="image-container">
+              <img src="assets/images/3.jpg" alt="Article Image" />
+            </div>
+            <div class="content">
+              <h3 class="title">The Future of Green Tennis Courts</h3>
+              <p class="excerpt">
+                An exploration into sustainable design and innovation in the
+                world of tennis.
+              </p>
+              <div class="meta">
+                <span class="author"
+                  >By
+                  <span data-href="#" class="author-link"
+                    >Sarah Collins</span
+                  ></span
+                >
+                <span class="date">July 7, 2025</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="article-details.html" class="article-card">
+          <div class="article-card">
+            <div class="image-container">
+              <img src="assets/images/2.png" alt="Article Image" />
+            </div>
+            <div class="content">
+              <h3 class="title">The Future of Green Tennis Courts</h3>
+              <p class="excerpt">
+                An exploration into sustainable design and innovation in the
+                world of tennis.
+              </p>
+              <div class="meta">
+                <span class="author"
+                  >By
+                  <span data-href="#" class="author-link"
+                    >Sarah Collins</span
+                  ></span
+                >
+                <span class="date">July 7, 2025</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="article-details.html" class="article-card">
+          <div class="article-card">
+            <div class="image-container">
+              <img src="assets/images/1.jpg" alt="Article Image" />
+            </div>
+            <div class="content">
+              <h3 class="title">The Future of Green Tennis Courts</h3>
+              <p class="excerpt">
+                An exploration into sustainable design and innovation in the
+                world of tennis.
+              </p>
+              <div class="meta">
+                <span class="author"
+                  >By
+                  <span data-href="#" class="author-link"
+                    >Sarah Collins</span
+                  ></span
+                >
+                <span class="date">July 7, 2025</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="article-details.html" class="article-card">
+          <div class="article-card">
+            <div class="image-container">
+              <img src="assets/images/1.jpg" alt="Article Image" />
+            </div>
+            <div class="content">
+              <h3 class="title">The Future of Green Tennis Courts</h3>
+              <p class="excerpt">
+                An exploration into sustainable design and innovation in the
+                world of tennis.
+              </p>
+              <div class="meta">
+                <span class="author"
+                  >By
+                  <span data-href="#" class="author-link"
+                    >Sarah Collins</span
+                  ></span
+                >
+                <span class="date">July 7, 2025</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="article-details.html" class="article-card">
+          <div class="article-card">
+            <div class="image-container">
+              <img src="assets/images/2.png" alt="Article Image" />
+            </div>
+            <div class="content">
+              <h3 class="title">The Future of Green Tennis Courts</h3>
+              <p class="excerpt">
+                An exploration into sustainable design and innovation in the
+                world of tennis.
+              </p>
+              <div class="meta">
+                <span class="author"
+                  >By
+                  <span data-href="#" class="author-link"
+                    >Sarah Collins</span
+                  ></span
+                >
+                <span class="date">July 7, 2025</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="article-details.html" class="article-card">
+          <div class="article-card">
+            <div class="image-container">
+              <img src="assets/images/3.jpg" alt="Article Image" />
+            </div>
+            <div class="content">
+              <h3 class="title">The Future of Green Tennis Courts</h3>
+              <p class="excerpt">
+                An exploration into sustainable design and innovation in the
+                world of tennis.
+              </p>
+              <div class="meta">
+                <span class="author"
+                  >By
+                  <span data-href="#" class="author-link"
+                    >Sarah Collins</span
+                  ></span
+                >
+                <span class="date">July 7, 2025</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- End of articles section -->
+
+    <!-- Videos Section -->
+    <section class="container videos-section">
+      <div class="section-header">
+        <h2>Trending Videos</h2>
+        <a
+          href="https://www.youtube.com/@morning-brew"
+          target="_blank"
+          class="youtube-link"
+        >
+          Much More Over On YouTube
+          <svg
+            width="10"
+            height="10"
+            viewBox="0 0 9 8"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.691 0.83H4.849L8.125 4.106 4.849 7.421H2.691L3.952 6.147 5.369 4.821 3.406 4.886H0.325V3.326H3.406L5.356 3.391 3.913 2.052 2.691 0.83Z"
+            />
+          </svg>
+        </a>
+      </div>
+
+      <div class="video-content">
+        <!-- Featured Video -->
+        <div class="featured-video">
+          <img src="assets/images/600x300.png" alt="" />
+          <div class="video-info">
+            <h3>Why LA has a huge traffic problem</h3>
+            <a href="#" class="watch-btn">Watch Now</a>
+            <span class="date">Jul 2, 2025</span>
+          </div>
+        </div>
+
+        <!-- Side Videos -->
+        <div class="side-videos">
+          <a href="#" class="side-video clickable-card">
+            <img src="assets/images/2.png" alt="" />
+            <div class="video-info">
+              <h4>Would you take $50,000 to move here?</h4>
+              <button class="watch-btn">Watch Now</button>
+              <span class="date">Jun 26, 2025</span>
+            </div>
+          </a>
+          <hr />
+          <a href="#" class="side-video clickable-card">
+            <img src="assets/images/1.jpg" alt="" />
+            <div class="video-info">
+              <h4>I became a magician to learn how much money they make</h4>
+              <button class="watch-btn">Watch Now</button>
+              <span class="date">Jun 24, 2025</span>
+            </div>
+          </a>
+          <hr />
+          <a href="#" class="side-video clickable-card">
+            <img src="assets/images/3.jpg" alt="" />
+            <div class="video-info">
+              <h4>Why fixing LA's transit crisis feels impossible</h4>
+              <button class="watch-btn">Watch Now</button>
+              <span class="date">Jun 12, 2025</span>
+            </div>
+          </a>
+          <hr />
+          <a href="#" class="side-video clickable-card">
+            <img src="assets/images/1.jpg" alt="" />
+            <div class="video-info">
+              <h4>I became a magician to learn how much money they make</h4>
+              <button class="watch-btn">Watch Now</button>
+              <span class="date">Jun 24, 2025</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- End of Videos Section -->
+
+    <!-- Testimonials Section -->
+    <section class="container testimonials">
+      <h2 class="section-title">What Our Readers Say</h2>
+      <button class="nav-button prev-btn">❮</button>
+      <button class="nav-button next-btn">❯</button>
+
+      <div class="testimonial-wrapper swiper">
+        <div class="testimonial-slider swiper-wrapper">
+          <!-- 6 Cards -->
+          <div class="testimonial-card swiper-slide">
+            <div class="stars">
+              <img src="assets/icons/star.svg" alt="star" />
+              <img src="assets/icons/star.svg" alt="star" />
+              <img src="assets/icons/star.svg" alt="star" />
+              <img src="assets/icons/star.svg" alt="star" />
+              <img src="assets/icons/star.svg" alt="star" />
+            </div>
+            <p class="review">
+              “Top-notch writing. Feels smart but not boring.”
+            </p>
+            <div class="reviewer">
+              <img src="assets/images/user1.png" alt="Layla White" />
+              Layla White
+            </div>
+          </div>
+          <div class="testimonial-card swiper-slide">
+            <div class="stars">
+              <img src="assets/icons/star.svg" alt="star" />
+              <img src="assets/icons/star.svg" alt="star" />
+              <img src="assets/icons/star.svg" alt="star" />
+              <img src="assets/icons/star.svg" alt="star" />
+              <img src="assets/icons/star.svg" alt="star" />
+            </div>
+            <p class="review">
+              “Top-notch writing. Feels smart but not boring.”
+            </p>
+            <div class="reviewer">
+              <img src="assets/images/user2.png" alt="Maya Lewis" />
+              Maya Lewis
+            </div>
+          </div>
+          <div class="testimonial-card swiper-slide">
+            <div class="stars">
+              <img src="assets/icons/star.svg" alt="star" />
+              <img src="assets/icons/star.svg" alt="star" />
+              <img src="assets/icons/star.svg" alt="star" />
+              <img src="assets/icons/star.svg" alt="star" />
+              <img src="assets/icons/star.svg" alt="star" />
+            </div>
+            <p class="review">
+              “Top-notch writing. Feels smart but not boring.”
+            </p>
+            <div class="reviewer">
+              <img src="assets/images/user1.png" alt="Layla White" />
+              Layla White
+            </div>
+          </div>
+          <div class="testimonial-card swiper-slide">
+            <div class="stars">
+              <img src="assets/icons/star.svg" alt="star" />
+              <img src="assets/icons/star.svg" alt="star" />
+              <img src="assets/icons/star.svg" alt="star" />
+              <img src="assets/icons/star.svg" alt="star" />
+              <img src="assets/icons/star.svg" alt="star" />
+            </div>
+            <p class="review">
+              “Top-notch writing. Feels smart but not boring.”
+            </p>
+            <div class="reviewer">
+              <img src="assets/images/user2.png" alt="Maya Lewis" />
+              Maya Lewis
+            </div>
+          </div>
+          <div class="testimonial-card swiper-slide">
+            <div class="stars">
+              <img src="assets/icons/star.svg" alt="star" />
+              <img src="assets/icons/star.svg" alt="star" />
+              <img src="assets/icons/star.svg" alt="star" />
+              <img src="assets/icons/star.svg" alt="star" />
+              <img src="assets/icons/star.svg" alt="star" />
+            </div>
+            <p class="review">
+              “Top-notch writing. Feels smart but not boring.”
+            </p>
+            <div class="reviewer">
+              <img src="assets/images/user1.png" alt="Layla White" />
+              Layla White
+            </div>
+          </div>
+          <div class="testimonial-card swiper-slide">
+            <div class="stars">
+              <img src="assets/icons/star.svg" alt="star" />
+              <img src="assets/icons/star.svg" alt="star" />
+              <img src="assets/icons/star.svg" alt="star" />
+              <img src="assets/icons/star.svg" alt="star" />
+              <img src="assets/icons/star.svg" alt="star" />
+            </div>
+            <p class="review">
+              “Top-notch writing. Feels smart but not boring.”
+            </p>
+            <div class="reviewer">
+              <img src="assets/images/user2.png" alt="Maya Lewis" />
+              Maya Lewis
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Testimonials Section -->
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container-footer-newsletter">
+        <div class="container footer-newsletter">
+          <div class="newsletter-content">
+            <h3>Never miss a story.</h3>
+            <p>
+              Subscribe for daily news, trends & insights—delivered free every
+              weekday.
+            </p>
+          </div>
+          <form class="newsletter-form">
+            <input
+              type="email"
+              placeholder="Your email address"
+              required
+              name="email"
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="container-footer-menus">
+        <div class="container footer-menus">
+          <div class="menu-col logo-col">
+            <img src="assets/logo.png" alt="Logo" class="footer-logo" />
+            <p class="footer-description">
+              The daily newsletter for bold business and tech minds. Delivered
+              to your inbox, every morning.
+            </p>
+          </div>
+
+          <div class="menu-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Advertise</a></li>
+            </ul>
+          </div>
+
+          <div class="menu-col">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Articles</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Spam FAQs</a></li>
+            </ul>
+          </div>
+
+          <div class="menu-col social-col">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#"
+                ><img src="assets/icons/facebook.svg" alt="Facebook"
+              /></a>
+              <a href="#"
+                ><img src="assets/icons/twitter.svg" alt="Twitter"
+              /></a>
+              <a href="#"
+                ><img src="assets/icons/instagram.svg" alt="Instagram"
+              /></a>
+              <a href="#"
+                ><img src="assets/icons/discord.svg" alt="Discord"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container footer-bottom">
+          <p>© 2025 Amr Mahmoud. All rights reserved.</p>
+          <ul class="legal-links">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- END OF FOOTER -->
+  </body>
+</html>
