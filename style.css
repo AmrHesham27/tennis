@@ -1182,22 +1182,13 @@ hr {
   overflow: hidden;
 }
 
-.testimonial-slider {
-  display: flex;
-  transition: transform 0.4s ease-in-out;
-  gap: 20px;
-  padding-right: 0;
-  margin-right: 0;
-}
-
 .testimonial-card {
   background: white;
   border-radius: 12px;
-  padding: 30px 20px;
-  min-width: calc(100% / 3 - 13.33px); /* 3 visible at once with gap */
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   flex-shrink: 0;
   box-sizing: border-box;
+  margin-bottom: 20px;
 }
 
 .stars {
@@ -1205,6 +1196,7 @@ hr {
   justify-content: center;
   gap: 4px;
   margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .stars img {
@@ -1219,6 +1211,7 @@ hr {
   word-break: break-word;
   line-height: 1.5;
   font-size: 1rem;
+  padding: 0 10px;
 }
 
 .reviewer {
@@ -1229,6 +1222,7 @@ hr {
   justify-content: center;
   gap: 10px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .reviewer img {
@@ -1281,10 +1275,6 @@ hr {
   .testimonial-card {
     min-width: 100%;
     padding: 25px 16px;
-  }
-
-  .testimonial-slider {
-    gap: 12px;
   }
 }
 
