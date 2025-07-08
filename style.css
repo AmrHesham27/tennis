@@ -1,43 +1,12 @@
 /* fonts */
 /* Rajdhani Regular */
 @font-face {
-  font-family: "Rajdhani";
-  src: url("assets/fonts/Rajdhani-Regular.ttf") format("truetype");
-  font-weight: 400;
+  font-family: 'Oswald';
+  src: url('assets/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
 }
 
-/* Rajdhani Medium */
-@font-face {
-  font-family: "Rajdhani";
-  src: url("assets/fonts/Rajdhani-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-/* Rajdhani SemiBold */
-@font-face {
-  font-family: "Rajdhani";
-  src: url("assets/fonts/Rajdhani-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-
-/* Rajdhani Bold */
-@font-face {
-  font-family: "Rajdhani";
-  src: url("assets/fonts/Rajdhani-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-
-/* Rajdhani Light */
-@font-face {
-  font-family: "Rajdhani";
-  src: url("assets/fonts/Rajdhani-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
 
 /* Color Variables */
 :root {
@@ -69,7 +38,7 @@ body {
   background: var(--white);
   color: var(--primary-green);
   overflow-x: hidden;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 a {
