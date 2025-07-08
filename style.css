@@ -1251,6 +1251,7 @@ hr {
   flex-shrink: 0;
   box-sizing: border-box;
   margin-bottom: 20px;
+  min-height: 140px;
 }
 
 .stars {
@@ -1320,6 +1321,10 @@ hr {
 }
 .next-btn {
   right: 0;
+}
+
+.swiper-wrapper {
+  max-height: 180px;
 }
 
 .swiper-slide {
