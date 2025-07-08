@@ -63,7 +63,7 @@ a:hover {
   border-radius: 55px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   transition: all 0.2s ease;
   margin-bottom: auto;
 }
@@ -130,7 +130,7 @@ a:hover {
   color: var(--primary-green);
   text-decoration: none;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   transition: color 0.2s;
   padding: 0.3rem 0.7rem;
   border-radius: 8px;
@@ -330,7 +330,7 @@ a:hover {
 
   .search-input {
     padding: 0.6rem 1rem;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -420,7 +420,7 @@ a:hover {
 }
 
 .email-input {
-  padding: 0.9rem 1.2rem;
+  padding: 1.1rem 1.2rem;
   border-radius: 30px;
   border: 1.5px solid var(--border-gray);
   font-size: 1rem;
@@ -442,14 +442,14 @@ a:hover {
   font-weight: 900;
   border: none;
   border-radius: 30px;
-  padding: 0.9rem;
+  padding: 1.1rem;
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.2s, color 0.2s, box-shadow 0.2s;
   box-shadow: 0 2px 8px var(--shadow-green-medium);
   width: 100%;
   max-width: 243.4px;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 
 .hero-btn:hover {
@@ -524,12 +524,19 @@ a:hover {
 
 /* Main Article */
 .main-article {
-  flex: 1;
+  flex: 1.5;
   border-radius: 30px 0px 30px 0px;
   background-color: var(--primary-green);
-  text-align: center;
+  text-align: start;
   padding-bottom: 20px;
   margin-bottom: 2rem;
+}
+
+.main-article-eyebrow {
+  font-size: 1rem;
+  color: var(--white);
+  padding: 0 15px;
+  margin-bottom: 0;
 }
 
 .main-article img {
@@ -538,6 +545,7 @@ a:hover {
 }
 
 .main-article h2 {
+  margin-top: 10px;
   color: var(--white);
   font-size: 1.3rem;
   margin-bottom: 10px;
@@ -546,7 +554,7 @@ a:hover {
 }
 
 .main-article .excerpt {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: var(--white);
   margin-bottom: 8px;
   padding: 0 15px;
@@ -590,6 +598,17 @@ a:hover {
   font-weight: 600;
 }
 
+@media (max-width: 1023px) {
+  .featured-latest .container {
+    padding: 0px;
+  }
+
+  .featured-latest {
+    padding: 0px;
+    padding-bottom: 50px;
+  }
+}
+
 /* Tablet Main Article */
 @media (min-width: 768px) and (max-width: 1023px) {
   .main-article {
@@ -619,7 +638,6 @@ a:hover {
 /* Desktop Main Article */
 @media (min-width: 1024px) {
   .main-article {
-    flex: 2;
     border-radius: 50px 0px 50px 0px;
     padding-bottom: 25px;
     margin-bottom: 0;
@@ -668,7 +686,7 @@ a:hover {
 }
 
 .latest-stories h2 {
-  font-size: 1.1rem;
+  font-size: 2rem;
   margin-bottom: 16px;
   margin-top: 0;
 }
@@ -695,6 +713,7 @@ a:hover {
   color: #222;
   font-weight: 600;
   display: block;
+  font-size: 1.2rem;
 }
 
 .latest-stories ul li a {
@@ -706,13 +725,13 @@ a:hover {
 }
 
 .latest-stories .preview-content {
-  margin-bottom: 20px;
   padding-bottom: 15px;
+  margin-bottom: 15px;
   border-bottom: 1px solid #eee;
 }
 
 .preview-eyebrow {
-  font-size: 0.7rem;
+  font-size: 0.95rem;
   color: #999;
   text-transform: uppercase;
   display: block;
@@ -720,7 +739,7 @@ a:hover {
 }
 
 .preview-headline {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: 600;
   margin: 0 0 6px 0;
   color: #222;
@@ -739,17 +758,12 @@ a:hover {
 }
 
 /* Tablet Featured Latest */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .featured-latest {
-    padding: 50px 0px;
+@media (max-width: 1023px) {
+  .latest-stories {
+    padding: 30px 20px;;
   }
-
-  .featured-latest .container {
-    gap: 35px;
-  }
-
   .latest-stories h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .preview-headline {
@@ -757,34 +771,23 @@ a:hover {
   }
 
   .preview-eyebrow {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 
   .preview-byline,
   .preview-byline a {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 }
 
 /* Desktop Featured Latest */
 @media (min-width: 1024px) {
-  .featured-latest {
-    padding: 70px 0px;
-  }
-
-  .featured-latest .container {
-    flex-direction: row;
-    gap: 40px;
-    align-items: flex-start;
-  }
-
   .latest-stories .preview-content {
-    margin-bottom: 24px;
     padding-bottom: 16px;
   }
 
   .preview-eyebrow {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 
   .preview-headline {
@@ -793,7 +796,7 @@ a:hover {
 
   .preview-byline,
   .preview-byline a {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 }
 
@@ -881,10 +884,43 @@ a:hover {
 .meta {
   display: flex;
   justify-content: space-between;
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: #888;
   flex-wrap: wrap;
   gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .articles-section .container {
+    padding: 0px;
+  }
+  .articles-section {
+    padding: 0px;
+  }
+
+  .image-container img {
+    height: 100%;
+  }
+
+  .articles-header {
+    padding: 30px 20px;
+  }
+
+  .article-card {
+    border-radius: 0px;
+  }
+
+  .excerpt {
+    font-size: 1rem;
+  }
+
+  .meta {
+    font-size: 1rem;
+  }
+
+  .date {
+    font-size: 1rem;
+  }
 }
 
 /* Tablet Articles */
@@ -907,7 +943,7 @@ a:hover {
   }
 
   .excerpt {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   .meta {
@@ -939,7 +975,7 @@ a:hover {
   }
 
   .excerpt {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   .meta {
@@ -989,7 +1025,7 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 5px;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 
 .video-content {
@@ -1052,7 +1088,7 @@ a:hover {
 }
 
 .watch-btn {
-  font-size: 0.75rem;
+  font-size: 1rem;
   background: var(--white);
   color: var(--primary-green);
   padding: 4px 8px;
@@ -1106,7 +1142,7 @@ hr {
   }
 
   .side-video .video-info h4 {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   .watch-btn {
@@ -1115,7 +1151,7 @@ hr {
   }
 
   .date {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 }
 
@@ -1164,7 +1200,7 @@ hr {
   }
 
   .side-video .video-info h4 {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   .watch-btn {
@@ -1173,7 +1209,7 @@ hr {
   }
 
   .date {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 }
 
@@ -1495,7 +1531,7 @@ hr {
 .menu-col a {
   text-decoration: none;
   color: var(--white);
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 
 .menu-col a:hover {
@@ -1627,7 +1663,7 @@ hr {
 
   .footer-description {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   .social-icons img {
@@ -1664,7 +1700,7 @@ hr {
   }
 
   .hero-subtitle {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   .articles-section {
@@ -1703,6 +1739,7 @@ hr {
     min-width: 100px;
     margin-top: 0;
     margin-bottom: auto;
+    margin-top: 7px;
     padding: 2px 10px;
   }
 
@@ -1945,7 +1982,7 @@ hr {
   }
 
   .editorial-description {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     margin: 8px 0;
     line-height: 1.5;
   }
@@ -1956,7 +1993,7 @@ hr {
   }
 
   .staff-group {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     margin-bottom: 15px;
     line-height: 1.5;
   }
