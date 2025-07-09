@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const searchInput = document.getElementById("searchInput");
   const mobileMenuToggle = document.getElementById("mobileMenuToggle");
   const mainNav = document.getElementById("mainNav");
+  const blogsDropdown = document.getElementById("blogsDropdown");
+  const blogsLink = document.querySelector('.blogs-nav-link');
+  const mobileBlogsSubmenu = document.getElementById("mobileBlogsSubmenu");
 
   // Toggle search expansion
   searchToggle.addEventListener("click", function () {
@@ -18,6 +21,74 @@ document.addEventListener("DOMContentLoaded", function () {
     searchInput.value = "";
   });
 
+  // Blogs dropdown functionality
+  let isMobile = window.innerWidth <= 767;
+  
+  if (blogsLink && blogsDropdown) {
+    let dropdownTimeout;
+
+    // Function to check if mobile
+    function checkMobile() {
+      isMobile = window.innerWidth <= 767;
+    }
+
+    // Desktop hover functionality
+    function setupDesktopEvents() {
+      blogsLink.addEventListener("mouseenter", function () {
+        if (!isMobile) {
+          clearTimeout(dropdownTimeout);
+          blogsDropdown.classList.add("active");
+          blogsLink.classList.add("active");
+        }
+      });
+
+      blogsLink.addEventListener("mouseleave", function () {
+        if (!isMobile) {
+          dropdownTimeout = setTimeout(() => {
+            blogsDropdown.classList.remove("active");
+            blogsLink.classList.remove("active");
+          }, 200);
+        }
+      });
+
+      blogsDropdown.addEventListener("mouseenter", function () {
+        if (!isMobile) {
+          clearTimeout(dropdownTimeout);
+        }
+      });
+
+      blogsDropdown.addEventListener("mouseleave", function () {
+        if (!isMobile) {
+          dropdownTimeout = setTimeout(() => {
+            blogsDropdown.classList.remove("active");
+            blogsLink.classList.remove("active");
+          }, 200);
+        }
+      });
+    }
+
+    // Mobile click functionality
+    function setupMobileEvents() {
+      blogsLink.addEventListener("click", function (e) {
+        if (isMobile) {
+          e.preventDefault();
+          mobileBlogsSubmenu.classList.toggle("active");
+          blogsLink.classList.toggle("active");
+        }
+      });
+    }
+
+    // Initialize events
+    setupDesktopEvents();
+    setupMobileEvents();
+
+    // Update mobile state on resize
+    window.addEventListener("resize", function () {
+      checkMobile();
+      isMobile = window.innerWidth <= 767;
+    });
+  }
+
   // Mobile menu toggle
   mobileMenuToggle.addEventListener("click", function () {
     mainNav.classList.toggle("active");
@@ -28,6 +99,20 @@ document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".nav-link");
   navLinks.forEach((link) => {
     link.addEventListener("click", function () {
+      // Don't close menu if it's the blogs link on mobile
+      if (!(isMobile && link.classList.contains('blogs-nav-link'))) {
+        mainNav.classList.remove("active");
+        mobileMenuToggle.classList.remove("active");
+      }
+    });
+  });
+
+  // Close mobile submenu when clicking on submenu links
+  const submenuLinks = document.querySelectorAll(".submenu-link");
+  submenuLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+      mobileBlogsSubmenu.classList.remove("active");
+      blogsLink.classList.remove("active");
       mainNav.classList.remove("active");
       mobileMenuToggle.classList.remove("active");
     });
@@ -38,6 +123,18 @@ document.addEventListener("DOMContentLoaded", function () {
     if (e.key === "Escape" && searchExpanded.classList.contains("active")) {
       searchExpanded.classList.remove("active");
       searchInput.value = "";
+    }
+
+    // Close blogs dropdown on escape key
+    if (e.key === "Escape" && blogsDropdown.classList.contains("active")) {
+      blogsDropdown.classList.remove("active");
+      blogsLink.classList.remove("active");
+    }
+
+    // Close mobile blogs submenu on escape key
+    if (e.key === "Escape" && mobileBlogsSubmenu.classList.contains("active")) {
+      mobileBlogsSubmenu.classList.remove("active");
+      blogsLink.classList.remove("active");
     }
 
     // Close mobile menu on escape key
@@ -65,6 +162,29 @@ document.addEventListener("DOMContentLoaded", function () {
       searchInput.value = "";
     }
 
+    // Close blogs dropdown when clicking outside
+    if (
+      !blogsDropdown.contains(e.target) &&
+      !blogsLink.contains(e.target) &&
+      blogsDropdown.classList.contains("active")
+    ) {
+      // On mobile, only close if not clicking on the blogs link itself
+      if (!isMobile || !blogsLink.contains(e.target)) {
+        blogsDropdown.classList.remove("active");
+        blogsLink.classList.remove("active");
+      }
+    }
+
+    // Close mobile blogs submenu when clicking outside
+    if (
+      !mobileBlogsSubmenu.contains(e.target) &&
+      !blogsLink.contains(e.target) &&
+      mobileBlogsSubmenu.classList.contains("active")
+    ) {
+      mobileBlogsSubmenu.classList.remove("active");
+      blogsLink.classList.remove("active");
+    }
+
     // Close mobile menu when clicking outside
     if (
       !mainNav.contains(e.target) &&
@@ -81,6 +201,16 @@ document.addEventListener("DOMContentLoaded", function () {
     if (window.innerWidth > 767) {
       mainNav.classList.remove("active");
       mobileMenuToggle.classList.remove("active");
+    }
+    // Update mobile state and handle blogs dropdown
+    isMobile = window.innerWidth <= 767;
+    if (isMobile) {
+      blogsDropdown.classList.remove("active");
+      blogsLink.classList.remove("active");
+    } else {
+      // Close mobile submenu when switching to desktop
+      mobileBlogsSubmenu.classList.remove("active");
+      blogsLink.classList.remove("active");
     }
   });
 

@@ -8,12 +8,6 @@
     />
     <title>The Break Point Newsletter</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
     <script src="script.js" defer></script>
     <link
       rel="stylesheet"
@@ -25,7 +19,7 @@
     <!-- HEADER -->
     <header class="main-header">
       <div class="container header-flex">
-        <a href="#" class="logo-link">
+        <a href="index.html" class="logo-link">
           <img
             src="assets/logo.png"
             alt="The Break Point Logo"
@@ -35,8 +29,66 @@
         <nav class="nav" id="mainNav">
           <a href="index.html" class="nav-link">Home</a>
           <a href="personalities.html" class="nav-link">Personalities</a>
-          <a href="blogs.html" class="nav-link">Blogs</a>
-          <a href="videos.html" class="nav-link">Videos</a>
+          <a href="#" class="nav-link blogs-nav-link">
+            Blogs
+            <svg
+              class="dropdown-icon"
+              width="12"
+              height="12"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 9L12 15L18 9"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <div class="mobile-blogs-submenu" id="mobileBlogsSubmenu">
+            <a href="match_analysis.html" class="nav-link submenu-link"
+              >Match Analysis</a
+            >
+            <a href="tournament_coverage.html" class="nav-link submenu-link"
+              >Tournament Coverage</a
+            >
+          </div>
+          <a href="https://www.youtube.com/" class="nav-link" target="_blank">
+            Videos
+            <svg
+              class="external-icon"
+              width="12"
+              height="12"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 13V19A2 2 0 0 1 16 21H5A2 2 0 0 1 3 19V8A2 2 0 0 1 5 6H11"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M15 3H21V9"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M10 14L21 3"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
         </nav>
         <div class="header-actions">
           <div class="search-container">
@@ -94,7 +146,30 @@
         </div>
       </div>
     </header>
-    <!-- END OF HEADER -->
+    <!-- End of Header -->
+
+    <!-- BLOGS DROPDOWN -->
+    <div class="blogs-dropdown" id="blogsDropdown">
+      <div class="container">
+        <div class="blogs-categories">
+          <a href="match_analysis.html" class="category-link">
+            <div class="category-icon">🎾</div>
+            <div class="category-content">
+              <h3>Match Analysis</h3>
+              <p>In-depth breakdowns of key matches</p>
+            </div>
+          </a>
+          <a href="tournament_coverage.html" class="category-link">
+            <div class="category-icon">🏆</div>
+            <div class="category-content">
+              <h3>Tournament Coverage</h3>
+              <p>Grand Slams, ATP, WTA events</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- End of Blogs Dropdown -->
 
     <!-- Thank you section -->
     <section class="thank-you-section">
