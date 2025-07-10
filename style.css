@@ -784,7 +784,6 @@ a:hover {
 /* Main Article */
 .main-article {
   flex: 1.5;
-  background-color: var(--primary-green);
   text-align: start;
   padding-bottom: 20px;
   margin-bottom: 2rem;
@@ -792,7 +791,7 @@ a:hover {
 
 .main-article-eyebrow {
   font-size: 1.1rem;
-  color: var(--white);
+  color: var(--grey);
   padding: 0 15px;
   margin-bottom: 0;
 }
@@ -813,7 +812,7 @@ a:hover {
 
 .main-article .excerpt {
   font-size: 1.2rem;
-  color: var(--white);
+  color: var(--black);
   margin-bottom: 8px;
   padding: 0 15px;
   line-height: 1.4;
@@ -821,12 +820,16 @@ a:hover {
 
 .main-article .author {
   font-size: 1rem;
-  color: var(--white);
+  color: var(--grey);
   padding: 0 15px;
 }
 
 .main-article a {
-  color: var(--white);
+  color: var(--black);
+}
+
+.main-article .author a {
+  color: var(--grey);
 }
 
 .image-wrapper {
