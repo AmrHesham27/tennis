@@ -708,6 +708,18 @@ a:hover {
     padding: 5px;
     font-size: 1.1rem;
   }
+
+  .title {
+    font-size: 1.2rem !important;
+  }
+
+  .newsletter-form input, .newsletter-form button {
+    border-radius: 5px !important;
+  }
+
+  .section-title {
+    font-size: 1.5rem !important;
+  }
 }
 
 /* Tablet Hero */
