@@ -7,10 +7,27 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"
     />
     <title>The Break Point Newsletter</title>
-    <link rel="stylesheet" href="style.min.css" />
-    <script src="script.min.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
-  <body>
+  <body>    
+    <!-- COOKIE CONSENT BAR -->
+    <div class="cookie-consent" id="cookieConsent">
+      <div class="container">
+        <div class="cookie-content">
+          <div class="cookie-text">
+            <h4>🍪 We use cookies</h4>
+            <p>We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept", you consent to our use of cookies.</p>
+          </div>
+          <div class="cookie-actions">
+            <button class="cookie-btn accept-btn" id="acceptCookies">Accept</button>
+            <button class="cookie-btn decline-btn" id="declineCookies">Decline</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Cookie Consent Bar -->
+
     <!-- HEADER -->
     <header class="main-header">
       <div class="container header-flex">
@@ -268,30 +285,6 @@
 
     <!-- End of Show more articles SECTION -->
     
-
-    <!-- HERO SECTION -->
-    <section class="hero">
-      <div class="container hero-content">
-        <h2 class="hero-title">Get Smarter on Tennis</h2>
-        <p class="hero-subtitle">
-          Join The Break Point newsletter for weekly tennis insights, news, and
-          stories—straight to your inbox.
-        </p>
-        <form class="signup-form">
-          <input
-            type="email"
-            placeholder="Enter your email"
-            required
-            class="email-input"
-          />
-          <button type="submit" class="hero-btn">Subscribe Now</button>
-        </form>
-      </div>
-    </section>
-    <!-- End of Hero Section -->
-
-    
-
     <!-- FOOTER -->
     <footer class="site-footer">
       <div class="container-footer-newsletter">

@@ -7,12 +7,29 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"
     />
     <title>The Break Point Newsletter</title>
-    <link rel="stylesheet" href="style.min.css" />
-    <script src="script.min.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </head>
   <body>
+    <!-- COOKIE CONSENT BAR -->
+    <div class="cookie-consent" id="cookieConsent">
+      <div class="container">
+        <div class="cookie-content">
+          <div class="cookie-text">
+            <h4>🍪 We use cookies</h4>
+            <p>We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept", you consent to our use of cookies.</p>
+          </div>
+          <div class="cookie-actions">
+            <button class="cookie-btn accept-btn" id="acceptCookies">Accept</button>
+            <button class="cookie-btn decline-btn" id="declineCookies">Decline</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Cookie Consent Bar -->
+
     <!-- HEADER -->
     <header class="main-header">
       <div class="container header-flex">
@@ -745,5 +762,27 @@
       </div>
     </footer>
     <!-- END OF FOOTER -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+
+      // Testimonials Section
+      const swiper = new Swiper('.swiper', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: '.next-btn',
+          prevEl: '.prev-btn',
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2
+          },
+          1024: {
+            slidesPerView: 3
+          }
+          }
+        });
+      });
+    </script>
   </body>
 </html>

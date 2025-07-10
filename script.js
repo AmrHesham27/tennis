@@ -9,6 +9,72 @@ document.addEventListener("DOMContentLoaded", function () {
   const blogsLink = document.querySelector('.blogs-nav-link');
   const mobileBlogsSubmenu = document.getElementById("mobileBlogsSubmenu");
 
+  // Cookie Consent Functionality
+  const cookieConsent = document.getElementById("cookieConsent");
+  const acceptCookies = document.getElementById("acceptCookies");
+  const declineCookies = document.getElementById("declineCookies");
+
+  // Check if user has already made a choice
+  function hasUserConsented() {
+    return localStorage.getItem('cookieConsent') !== null;
+  }
+
+  // Show cookie consent if user hasn't made a choice
+  function showCookieConsent() {
+    
+    // Try to find the element again in case it wasn't found initially
+    const cookieConsentElement = document.getElementById("cookieConsent");
+    
+    if (!hasUserConsented() && cookieConsentElement) {
+      // Small delay to ensure smooth animation
+      setTimeout(() => {
+        cookieConsentElement.classList.add('show');
+      }, 1000);
+    } else {
+      console.log('Cookie consent will not show - already consented or element not found');
+    }
+  }
+
+  // Handle cookie acceptance
+  function acceptCookieConsent() {
+    hideCookieConsent();
+    // Here you can add analytics tracking or other cookie-dependent functionality
+  }
+
+  // Handle cookie decline
+  function declineCookieConsent() {
+    hideCookieConsent();
+    // Here you can disable analytics tracking or other cookie-dependent functionality
+  }
+
+  // Hide cookie consent
+  function hideCookieConsent() {
+    const cookieConsentElement = document.getElementById("cookieConsent");
+    if (cookieConsentElement) {
+      cookieConsentElement.classList.remove('show');
+    }
+  }
+
+  // Add event listeners for cookie buttons
+  if (acceptCookies) {
+    acceptCookies.addEventListener('click', acceptCookieConsent);
+  }
+
+  if (declineCookies) {
+    declineCookies.addEventListener('click', declineCookieConsent);
+  }
+
+  // Show cookie consent on page load
+  showCookieConsent();
+  
+  // Temporary: Force show cookie consent for testing
+  setTimeout(() => {
+    const testElement = document.getElementById("cookieConsent");
+    if (testElement) {
+      testElement.classList.add('show');
+    }
+  }, 2000);
+
   // Toggle search expansion
   searchToggle.addEventListener("click", function () {
     searchExpanded.classList.add("active");
@@ -148,7 +214,6 @@ document.addEventListener("DOMContentLoaded", function () {
   searchInput.addEventListener("input", function (e) {
     const query = e.target.value.toLowerCase();
     // Add your search logic here
-    console.log("Searching for:", query);
   });
 
   // Close search when clicking outside
@@ -227,24 +292,5 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = el.dataset.href;
       }
     });
-  });
-
-  // Testimonials Section
-  const swiper = new Swiper('.swiper', {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    navigation: {
-      nextEl: '.next-btn',
-      prevEl: '.prev-btn',
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 2
-      },
-      1024: {
-        slidesPerView: 3
-      }
-    }
-  });
-  
+  });  
 });
