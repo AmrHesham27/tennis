@@ -9,7 +9,10 @@
     <title>The Break Point Newsletter</title>
     <link rel="stylesheet" href="style.min.css" />
     <script src="script.min.js" defer></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </head>
   <body>
@@ -19,11 +22,19 @@
         <div class="cookie-content">
           <div class="cookie-text">
             <h4>🍪 We use cookies</h4>
-            <p>We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept", you consent to our use of cookies.</p>
+            <p>
+              We use cookies to enhance your browsing experience, serve
+              personalized content, and analyze our traffic. By clicking
+              "Accept", you consent to our use of cookies.
+            </p>
           </div>
           <div class="cookie-actions">
-            <button class="cookie-btn accept-btn" id="acceptCookies">Accept</button>
-            <button class="cookie-btn decline-btn" id="declineCookies">Decline</button>
+            <button class="cookie-btn accept-btn" id="acceptCookies">
+              Accept
+            </button>
+            <button class="cookie-btn decline-btn" id="declineCookies">
+              Decline
+            </button>
           </div>
         </div>
       </div>
@@ -185,140 +196,180 @@
     </div>
     <!-- End of Blogs Dropdown -->
 
+    <div class="global-margin">
     <!-- HERO SECTION -->
-    <section class="hero">
+    <section class="container hero">
+      <img
+        class="subscribe-background"
+        src="assets/svg/tennis.svg"
+        alt="tennis net"
+      />
       <div class="container hero-content">
         <h2 class="hero-title">Get Smarter on Tennis</h2>
         <p class="hero-subtitle">
           Join The Break Point newsletter for weekly tennis insights, news, and
           stories—straight to your inbox.
         </p>
-        <form class="signup-form">
-          <input
-            type="email"
-            placeholder="Enter your email"
-            required
-            class="email-input"
-          />
-          <button type="submit" class="hero-btn">Subscribe Now</button>
+        <form class="subscribe-form">
+          <div class="email-input-wrapper">
+            <img src="assets/svg/email.svg" alt="email icon" />
+            <input type="email" placeholder="Enter Yor Email" />
+          </div>
+          <button type="submit">Subscribe Now</button>
         </form>
       </div>
     </section>
     <!-- End of Hero Section -->
 
     <!-- FEATURED LATEST SECTION -->
-    <section class="featured-latest">
-      <div class="container">
-        <div class="main-article">
-          <div class="image-wrapper">
-            <img src="assets/images/600x400.webp" alt="Main article image" fetchpriority=high />
-            <div class="image-overlay">
-              Main Match Analysis: Djokovic vs. Alcaraz
-            </div>
+    <section class="container featured-latest">
+      <div class="main-article">
+        <div class="image-wrapper">
+          <img
+            src="assets/images/tennis-2.png"
+            alt="Main article image"
+            fetchpriority="high"
+          />
+          <div class="image-overlay">
+            Main Match Analysis: Djokovic vs. Alcaraz
           </div>
-
-          <p class="main-article-eyebrow">Tennis</p>
-          <h2><a href="one_article.html">Main Match Analysis: Djokovic vs. Alcaraz</a></h2>
-          <p class="excerpt">
-            A deep dive into yesterday's thrilling semi-final clash and what it
-            means for Wimbledon.
-          </p>
-          <p class="author">By <a href="#">James Rally</a> | 2 days ago</p>
         </div>
 
-        <aside class="latest-stories">
-          <h2>The Latest</h2>
-
-          <div class="preview-content">
-            <a class="preview-eyebrow" href="#">Government</a>
-            <h3 class="preview-headline">
-              <a href="one_article.html">What the GOP's mega law means for your wallet</a>
-            </h3>
-            <span class="preview-byline"
-              ><a href="#">Brendan Cosgrove</a> | about 3 hours ago</span
-            >
-          </div>
-
-          <div class="preview-content">
-            <a class="preview-eyebrow" href="#">Tennis</a>
-            <h3 class="preview-headline">
-              <a href="one_article.html">How Sinner is Changing the Game</a>
-            </h3>
-            <span class="preview-byline">
-              <a href="#">Alicia Mendez</a> | 1 hour ago
-            </span>
-          </div>
-
-          <div class="preview-content">
-            <a class="preview-eyebrow" href="#">Technology</a>
-            <h3 class="preview-headline">
-              <a href="one_article.html">Racket Tech: What Pros Are Using in 2025</a>
-            </h3>
-            <span class="preview-byline">
-              <a href="#">Marcus Long</a> | 2 days ago
-            </span>
-          </div>
-
-          <div class="preview-content">
-            <a class="preview-eyebrow" href="#">Tennis</a>
-            <h3 class="preview-headline">
-              <a href="one_article.html">How Sinner is Changing the Game</a>
-            </h3>
-            <span class="preview-byline">
-              <a href="#">Alicia Mendez</a> | 1 hour ago
-            </span>
-          </div>
-
-          <div class="preview-content">
-            <a class="preview-eyebrow" href="#">Technology</a>
-            <h3 class="preview-headline">
-              <a href="one_article.html">Racket Tech: What Pros Are Using in 2025</a>
-            </h3>
-            <span class="preview-byline">
-              <a href="one_article.html">Marcus Long</a> | 2 days ago
-            </span>
-          </div>
-
-          <a href="#" class="show-more-btn">All Stories</a>
-        </aside>
+        <p class="main-article-eyebrow">Tennis</p>
+        <h2>
+          <a href="one_article.html"
+            >Main Match Analysis: Djokovic vs. Alcaraz</a
+          >
+        </h2>
+        <p class="article-excerpt">
+          A deep dive into yesterday's thrilling semi-final clash and what it
+          means for Wimbledon.
+        </p>
+        <div class="article-author-container">
+          <img class="svg" src="assets/svg/user.svg" alt="author icon" />
+          <p class="author">By <a href="#">James Rally</a></p>
+          <img class="svg-2" src="assets/svg/article.svg" alt="article icon" />
+          <p class="author">| 2 days ago</p>
+        </div>
       </div>
+
+      <aside class="latest-stories">
+        <div class="section-header">
+          <h2 class="partial-underline">Latest Articles</h2>
+          <a class="show-more-link" href="tournament_coverage.html">Show More</a>
+        </div>
+
+        <div class="preview-content">
+          <a class="preview-eyebrow" href="#">Government</a>
+          <h3 class="preview-headline">
+            <a href="one_article.html"
+              >What the GOP's mega law means for your wallet</a
+            >
+          </h3>
+          <div class="article-author-container">
+            <img class="svg" src="assets/svg/user.svg" alt="author icon" />
+            <p class="author">By <a href="#">Brendan Cosgrove</a></p>
+            <img
+              class="svg-2"
+              src="assets/svg/article.svg"
+              alt="article icon"
+            />
+            <p class="author">3 hours ago</p>
+          </div>
+        </div>
+
+        <div class="preview-content">
+          <a class="preview-eyebrow" href="#">Tennis</a>
+          <h3 class="preview-headline">
+            <a href="one_article.html">How Sinner is Changing the Game</a>
+          </h3>
+          <div class="article-author-container">
+            <img class="svg" src="assets/svg/user.svg" alt="author icon" />
+            <p class="author">By <a href="#">Alicia Mendez</a></p>
+            <img
+              class="svg-2"
+              src="assets/svg/article.svg"
+              alt="article icon"
+            />
+            <p class="author">| 1 hour ago</p>
+          </div>
+        </div>
+
+        <div class="preview-content">
+          <a class="preview-eyebrow" href="#">Technology</a>
+          <h3 class="preview-headline">
+            <a href="one_article.html"
+              >Racket Tech: What Pros Are Using in 2025</a
+            >
+          </h3>
+          <div class="article-author-container">
+            <img class="svg" src="assets/svg/user.svg" alt="author icon" />
+            <p class="author">By <a href="#">Marcus Long</a></p>
+            <img
+              class="svg-2"
+              src="assets/svg/article.svg"
+              alt="article icon"
+            />
+            <p class="author">| 2 days ago</p>
+          </div>
+        </div>
+      </aside>
     </section>
+    <!-- End of Featured Latest Section -->
+
+    <!-- Hero Section 2 -->
+    <section class="container hero-2">
+      <img class="tennis-net" src="assets/svg/tennis.svg" alt="tennis net" />
+      <h1>LET'S PLAY</h1>
+      <h1>TENNIS</h1>
+      <div class="banner">
+        <h2>All</h2>
+        <h2>News</h2>
+      </div>
+      <img
+        class="big-circle"
+        src="assets/svg/big-circle.svg"
+        alt="big circle"
+      />
+      <img
+        class="small-circle"
+        src="assets/svg/small-circle.svg"
+        alt="small circle"
+      />
+      <img class="x-icon-1" src="assets/svg/x.svg" alt="x icon" />
+      <img class="x-icon-2" src="assets/svg/x.svg" alt="x icon" />
+      <img class="dots-icon" src="assets/svg/dots.svg" alt="dots icon" />
+      <img class="solid-dot-1" src="assets/svg/solid-dot.svg" alt="dot icon" />
+      <img class="solid-dot-2" src="assets/svg/solid-dot.svg" alt="dot icon" />
+      <a href="https://www.facebook.com/" target="_blank">
+        <img
+          class="facebook"
+          src="assets/svg/facebook-2.svg"
+          alt="facebook icon"
+        />
+      </a>
+      <a href="https://www.instagram.com/" target="_blank">
+        <img
+          class="instagram"
+          src="assets/svg/instagram-2.svg"
+          alt="instagram icon"
+        />
+      </a>
+      <p class="hero-2-text">@TENNIS.SPORT</p>
+    </section>
+    <!-- End of Hero Section 2 -->
 
     <!-- articles section -->
     <section class="container articles-section">
-      <div class="articles-header">
-        <h2 class="section-title">Latest Articles</h2>
-        <a href="#" class="show-more-btn">Show More</a>
+      <div class="section-header">
+        <h2 class="partial-underline">Latest Articles</h2>
+        <a href="tournament_coverage.html" class="show-more-link">Show More</a>
       </div>
       <div class="articles-grid">
         <a href="one_article.html" class="article-card">
           <div class="article-card">
             <div class="image-container">
               <img
-                src="assets/images/3.webp"
-                alt="Article Image"
-                loading="lazy"
-              />
-            </div>
-            <div class="content">
-              <h3 class="title">The Future of Green Tennis Courts</h3>
-              <div class="meta">
-                <span class="author"
-                  >By
-                  <span data-href="#" class="author-link"
-                    >Sarah Collins</span
-                  ></span
-                >
-                <span class="date">July 7, 2025</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="one_article.html" class="article-card">
-          <div class="article-card">
-            <div class="image-container">
-              <img
                 src="assets/images/2.webp"
                 alt="Article Image"
                 loading="lazy"
@@ -326,14 +377,33 @@
             </div>
             <div class="content">
               <h3 class="title">The Future of Green Tennis Courts</h3>
+              <p class="article-excerpt">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's
+                <img src="assets/svg/up.svg" alt="Up Arrow" />
+              </p>
               <div class="meta">
-                <span class="author"
-                  >By
-                  <span data-href="#" class="author-link"
-                    >Sarah Collins</span
-                  ></span
-                >
-                <span class="date">July 7, 2025</span>
+                <div>
+                  <img
+                    class="svg"
+                    src="assets/svg/user.svg"
+                    alt="author icon"
+                  />
+                  <span class="author"
+                    >By
+                    <span data-href="#" class="author-link"
+                      >Sarah Collins</span
+                    ></span
+                  >
+                </div>
+                <div class="d-flex align-items-center">
+                  <img
+                    class="svg-2"
+                    src="assets/svg/article.svg"
+                    alt="article icon"
+                  />
+                  <span class="date">July 7, 2025</span>
+                </div>
               </div>
             </div>
           </div>
@@ -350,14 +420,33 @@
             </div>
             <div class="content">
               <h3 class="title">The Future of Green Tennis Courts</h3>
+              <p class="article-excerpt">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's
+                <img src="assets/svg/up.svg" alt="Up Arrow" />
+              </p>
               <div class="meta">
-                <span class="author"
-                  >By
-                  <span data-href="#" class="author-link"
-                    >Sarah Collins</span
-                  ></span
-                >
-                <span class="date">July 7, 2025</span>
+                <div>
+                  <img
+                    class="svg"
+                    src="assets/svg/user.svg"
+                    alt="author icon"
+                  />
+                  <span class="author"
+                    >By
+                    <span data-href="#" class="author-link"
+                      >Sarah Collins</span
+                    ></span
+                  >
+                </div>
+                <div class="d-flex align-items-center">
+                  <img
+                    class="svg-2"
+                    src="assets/svg/article.svg"
+                    alt="article icon"
+                  />
+                  <span class="date">July 7, 2025</span>
+                </div>
               </div>
             </div>
           </div>
@@ -374,14 +463,33 @@
             </div>
             <div class="content">
               <h3 class="title">The Future of Green Tennis Courts</h3>
+              <p class="article-excerpt">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's
+                <img src="assets/svg/up.svg" alt="Up Arrow" />
+              </p>
               <div class="meta">
-                <span class="author"
-                  >By
-                  <span data-href="#" class="author-link"
-                    >Sarah Collins</span
-                  ></span
-                >
-                <span class="date">July 7, 2025</span>
+                <div>
+                  <img
+                    class="svg"
+                    src="assets/svg/user.svg"
+                    alt="author icon"
+                  />
+                  <span class="author"
+                    >By
+                    <span data-href="#" class="author-link"
+                      >Sarah Collins</span
+                    ></span
+                  >
+                </div>
+                <div class="d-flex align-items-center">
+                  <img
+                    class="svg-2"
+                    src="assets/svg/article.svg"
+                    alt="article icon"
+                  />
+                  <span class="date">July 7, 2025</span>
+                </div>
               </div>
             </div>
           </div>
@@ -398,14 +506,33 @@
             </div>
             <div class="content">
               <h3 class="title">The Future of Green Tennis Courts</h3>
+              <p class="article-excerpt">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's
+                <img src="assets/svg/up.svg" alt="Up Arrow" />
+              </p>
               <div class="meta">
-                <span class="author"
-                  >By
-                  <span data-href="#" class="author-link"
-                    >Sarah Collins</span
-                  ></span
-                >
-                <span class="date">July 7, 2025</span>
+                <div>
+                  <img
+                    class="svg"
+                    src="assets/svg/user.svg"
+                    alt="author icon"
+                  />
+                  <span class="author"
+                    >By
+                    <span data-href="#" class="author-link"
+                      >Sarah Collins</span
+                    ></span
+                  >
+                </div>
+                <div class="d-flex align-items-center">
+                  <img
+                    class="svg-2"
+                    src="assets/svg/article.svg"
+                    alt="article icon"
+                  />
+                  <span class="date">July 7, 2025</span>
+                </div>
               </div>
             </div>
           </div>
@@ -422,14 +549,76 @@
             </div>
             <div class="content">
               <h3 class="title">The Future of Green Tennis Courts</h3>
+              <p class="article-excerpt">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's
+                <img src="assets/svg/up.svg" alt="Up Arrow" />
+              </p>
               <div class="meta">
-                <span class="author"
-                  >By
-                  <span data-href="#" class="author-link"
-                    >Sarah Collins</span
-                  ></span
-                >
-                <span class="date">July 7, 2025</span>
+                <div>
+                  <img
+                    class="svg"
+                    src="assets/svg/user.svg"
+                    alt="author icon"
+                  />
+                  <span class="author"
+                    >By
+                    <span data-href="#" class="author-link"
+                      >Sarah Collins</span
+                    ></span
+                  >
+                </div>
+                <div class="d-flex align-items-center">
+                  <img
+                    class="svg-2"
+                    src="assets/svg/article.svg"
+                    alt="article icon"
+                  />
+                  <span class="date">July 7, 2025</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="one_article.html" class="article-card">
+          <div class="article-card">
+            <div class="image-container">
+              <img
+                src="assets/images/3.webp"
+                alt="Article Image"
+                loading="lazy"
+              />
+            </div>
+            <div class="content">
+              <h3 class="title">The Future of Green Tennis Courts</h3>
+              <p class="article-excerpt">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's
+                <img src="assets/svg/up.svg" alt="Up Arrow" />
+              </p>
+              <div class="meta">
+                <div>
+                  <img
+                    class="svg"
+                    src="assets/svg/user.svg"
+                    alt="author icon"
+                  />
+                  <span class="author"
+                    >By
+                    <span data-href="#" class="author-link"
+                      >Sarah Collins</span
+                    ></span
+                  >
+                </div>
+                <div class="d-flex align-items-center">
+                  <img
+                    class="svg-2"
+                    src="assets/svg/article.svg"
+                    alt="article icon"
+                  />
+                  <span class="date">July 7, 2025</span>
+                </div>
               </div>
             </div>
           </div>
@@ -441,13 +630,13 @@
     <!-- Videos Section -->
     <section class="container videos-section">
       <div class="section-header">
-        <h2>Trending Videos</h2>
+        <h2 class="partial-underline">Trending Videos</h2>
         <a
           href="https://www.youtube.com/@morning-brew"
           target="_blank"
           class="youtube-link"
         >
-          Much More Over On YouTube
+          Show more
           <svg
             width="10"
             height="10"
@@ -465,11 +654,17 @@
       <div class="video-content">
         <!-- Featured Video -->
         <div class="featured-video">
-          <img src="assets/images/600x400.webp" alt="" loading="lazy" />
+          <img src="assets/images/2.webp" alt="" loading="lazy" />
           <div class="video-info">
             <h3>Why LA has a huge traffic problem</h3>
-            <a href="#" class="watch-btn">Watch Now</a>
-            <div class="date">Jul 2, 2025</div>
+            <div class="date d-flex align-items-center">
+              <img
+                class="svg-3"
+                src="assets/svg/article-white.svg"
+                alt="article icon"
+              />
+              <span class="date-text">Jul 2, 2025</span>
+            </div>
           </div>
         </div>
 
@@ -479,26 +674,42 @@
             <img src="assets/images/2.webp" alt="" loading="lazy" />
             <div class="video-info">
               <h4>Would you take $50,000 to move here?</h4>
-              <button class="watch-btn">Watch Now</button>
-              <div class="date">Jun 26, 2025</div>
+              <div class="date d-flex align-items-center">
+                <img
+                  class="svg-3"
+                  src="assets/svg/article-white.svg"
+                  alt="article icon"
+                />
+                <span class="date-text">Jun 26, 2025</span>
+              </div>
             </div>
           </a>
-          <hr />
           <a href="#" class="side-video clickable-card">
             <img src="assets/images/1.webp" alt="" loading="lazy" />
             <div class="video-info">
               <h4>I became a magician to learn how much money they make</h4>
-              <button class="watch-btn">Watch Now</button>
-              <div class="date">Jun 24, 2025</div>
+              <div class="date d-flex align-items-center">
+                <img
+                  class="svg-3"
+                  src="assets/svg/article-white.svg"
+                  alt="article icon"
+                />
+                <span class="date-text">Jun 24, 2025</span>
+              </div>
             </div>
           </a>
-          <hr />
           <a href="#" class="side-video clickable-card">
             <img src="assets/images/3.webp" alt="" loading="lazy" />
             <div class="video-info">
               <h4>Why fixing LA's transit crisis feels impossible</h4>
-              <button class="watch-btn">Watch Now</button>
-              <div class="date">Jun 12, 2025</div>
+              <div class="date d-flex align-items-center">
+                <img
+                  class="svg-3"
+                  src="assets/svg/article-white.svg"
+                  alt="article icon"
+                />
+                <span class="date-text">Jun 12, 2025</span>
+              </div>
             </div>
           </a>
         </div>
@@ -507,162 +718,154 @@
     <!-- End of Videos Section -->
 
     <!-- Testimonials Section -->
-    <section class="container testimonials">
-      <h2 class="section-title">What Our Readers Say</h2>
-      <button class="nav-button prev-btn">❮</button>
-      <button class="nav-button next-btn">❯</button>
 
-      <div class="testimonial-wrapper swiper">
-        <div class="swiper-wrapper">
-          <!-- 6 Cards -->
-          <div class="testimonial-card swiper-slide">
-            <div class="stars">
-              <img src="assets/icons/star.svg" alt="star" loading="lazy" />
-              <img src="assets/icons/star.svg" alt="star" loading="lazy" />
-              <img src="assets/icons/star.svg" alt="star" loading="lazy" />
-              <img src="assets/icons/star.svg" alt="star" loading="lazy" />
-              <img src="assets/icons/star.svg" alt="star" loading="lazy" />
+    <section id="testimonials" class="container">
+      <div class="testimonials-container">
+        <h2>What Our <span class="highlight">Reader</span></h2>
+        <h2>Say</h2>
+        <button class="nav-button prev-btn">❮</button>
+        <button class="nav-button next-btn">❯</button>
+        <div class="carousel swiper">
+          <!-- <button class="carousel-arrow prev">
+            <img src="images/141_5734.svg" alt="Previous" />
+          </button> -->
+          <div class="carousel-track swiper-wrapper">
+            <div class="testimonial-card main swiper-slide">
+              <div class="main-card-bg">
+                <img src="assets/images/user6.png" alt="Johan" />
+              </div>
+              <div class="main-card-content">
+                <p class="quote">
+                  Welcome to our vibrant community! Here, you can freely express
+                  your opinions, share your insights, and engage in meaningful
+                  discussions with fellow tennis enthusiasts.
+                </p>
+                <p class="author-name">Johan</p>
+                <div class="stars" style="display: flex; gap: 4px;">
+                  <img src="assets/svg/full-star.svg" alt="star" />
+                  <img src="assets/svg/full-star.svg" alt="star" />
+                  <img src="assets/svg/full-star.svg" alt="star" />
+                  <img src="assets/svg/full-star.svg" alt="star" />
+                  <img src="assets/svg/empty-star.svg" alt="star" />
+                </div>
+              </div>
             </div>
-            <p class="review">
-              "Top-notch writing. Feels smart but not boring."
-            </p>
-            <div class="reviewer">
-              <img
-                src="assets/images/user1.webp"
-                alt="Layla White"
-                loading="lazy"
-              />
-              Layla White
+            <div class="testimonial-card main swiper-slide">
+              <div class="main-card-bg">
+                <img src="assets/images/user6.png" alt="Johan" />
+              </div>
+              <div class="main-card-content">
+                <p class="quote">
+                  Welcome to our vibrant community! Here, you can freely express
+                  your opinions, share your insights, and engage in meaningful
+                  discussions with fellow tennis enthusiasts.
+                </p>
+                <p class="author-name">Johan</p>
+                <div class="stars" style="display: flex; gap: 4px;">
+                  <img src="assets/svg/full-star.svg" alt="star" />
+                  <img src="assets/svg/full-star.svg" alt="star" />
+                  <img src="assets/svg/full-star.svg" alt="star" />
+                  <img src="assets/svg/full-star.svg" alt="star" />
+                  <img src="assets/svg/empty-star.svg" alt="star" />
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="testimonial-card swiper-slide">
-            <div class="stars">
-              <img src="assets/icons/star.svg" alt="star" loading="lazy" />
-              <img src="assets/icons/star.svg" alt="star" loading="lazy" />
-              <img src="assets/icons/star.svg" alt="star" loading="lazy" />
-              <img src="assets/icons/star.svg" alt="star" loading="lazy" />
-              <img src="assets/icons/star.svg" alt="star" loading="lazy" />
+            <div class="testimonial-card main swiper-slide">
+              <div class="main-card-bg">
+                <img src="assets/images/user6.png" alt="Johan" />
+              </div>
+              <div class="main-card-content">
+                <p class="quote">
+                  Welcome to our vibrant community! Here, you can freely express
+                  your opinions, share your insights, and engage in meaningful
+                  discussions with fellow tennis enthusiasts.
+                </p>
+                <p class="author-name">Johan</p>
+                <div class="stars" style="display: flex; gap: 4px;">
+                  <img src="assets/svg/full-star.svg" alt="star" />
+                  <img src="assets/svg/full-star.svg" alt="star" />
+                  <img src="assets/svg/full-star.svg" alt="star" />
+                  <img src="assets/svg/full-star.svg" alt="star" />
+                  <img src="assets/svg/empty-star.svg" alt="star" />
+                </div>
+              </div>
             </div>
-            <p class="review">
-              "Top-notch writing. Feels smart but not boring."
-            </p>
-            <div class="reviewer">
-              <img
-                src="assets/images/user2.webp"
-                alt="Maya Lewis"
-                loading="lazy"
-              />
-              Maya Lewis
+            <div class="testimonial-card main swiper-slide">
+              <div class="main-card-bg">
+                <img src="assets/images/user6.png" alt="Johan" />
+              </div>
+              <div class="main-card-content">
+                <p class="quote">
+                  Welcome to our vibrant community! Here, you can freely express
+                  your opinions, share your insights, and engage in meaningful
+                  discussions with fellow tennis enthusiasts.
+                </p>
+                <p class="author-name">Johan</p>
+                <div class="stars" style="display: flex; gap: 4px;">
+                  <img src="assets/svg/full-star.svg" alt="star" />
+                  <img src="assets/svg/full-star.svg" alt="star" />
+                  <img src="assets/svg/full-star.svg" alt="star" />
+                  <img src="assets/svg/full-star.svg" alt="star" />
+                  <img src="assets/svg/empty-star.svg" alt="star" />
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="testimonial-card swiper-slide">
-            <div class="stars">
-              <img src="assets/icons/star.svg" alt="star" loading="lazy" />
-              <img src="assets/icons/star.svg" alt="star" loading="lazy" />
-              <img src="assets/icons/star.svg" alt="star" loading="lazy" />
-              <img src="assets/icons/star.svg" alt="star" loading="lazy" />
-              <img src="assets/icons/star.svg" alt="star" loading="lazy" />
-            </div>
-            <p class="review">
-              "Top-notch writing. Feels smart but not boring."
-            </p>
-            <div class="reviewer">
-              <img
-                src="assets/images/user1.webp"
-                alt="Layla White"
-                loading="lazy"
-              />
-              Layla White
-            </div>
-          </div>
-          <div class="testimonial-card swiper-slide">
-            <div class="stars">
-              <img src="assets/icons/star.svg" alt="star" loading="lazy" />
-              <img src="assets/icons/star.svg" alt="star" loading="lazy" />
-              <img src="assets/icons/star.svg" alt="star" loading="lazy" />
-              <img src="assets/icons/star.svg" alt="star" loading="lazy" />
-              <img src="assets/icons/star.svg" alt="star" loading="lazy" />
-            </div>
-            <p class="review">
-              "Top-notch writing. Feels smart but not boring."
-            </p>
-            <div class="reviewer">
-              <img
-                src="assets/images/user2.webp"
-                alt="Maya Lewis"
-                loading="lazy"
-              />
-              Maya Lewis
-            </div>
-          </div>
-          <div class="testimonial-card swiper-slide">
-            <div class="stars">
-              <img src="assets/icons/star.svg" alt="star" loading="lazy" />
-              <img src="assets/icons/star.svg" alt="star" loading="lazy" />
-              <img src="assets/icons/star.svg" alt="star" loading="lazy" />
-              <img src="assets/icons/star.svg" alt="star" loading="lazy" />
-              <img src="assets/icons/star.svg" alt="star" loading="lazy" />
-            </div>
-            <p class="review">
-              "Top-notch writing. Feels smart but not boring."
-            </p>
-            <div class="reviewer">
-              <img
-                src="assets/images/user1.webp"
-                alt="Layla White"
-                loading="lazy"
-              />
-              Layla White
-            </div>
-          </div>
-          <div class="testimonial-card swiper-slide">
-            <div class="stars">
-              <img src="assets/icons/star.svg" alt="star" loading="lazy" />
-              <img src="assets/icons/star.svg" alt="star" loading="lazy" />
-              <img src="assets/icons/star.svg" alt="star" loading="lazy" />
-              <img src="assets/icons/star.svg" alt="star" loading="lazy" />
-              <img src="assets/icons/star.svg" alt="star" loading="lazy" />
-            </div>
-            <p class="review">
-              "Top-notch writing. Feels smart but not boring."
-            </p>
-            <div class="reviewer">
-              <img
-                src="assets/images/user2.webp"
-                alt="Maya Lewis"
-                loading="lazy"
-              />
-              Maya Lewis
+            <div class="testimonial-card main swiper-slide">
+              <div class="main-card-bg">
+                <img src="assets/images/user6.png" alt="Johan" />
+              </div>
+              <div class="main-card-content">
+                <p class="quote">
+                  Welcome to our vibrant community! Here, you can freely express
+                  your opinions, share your insights, and engage in meaningful
+                  discussions with fellow tennis enthusiasts.
+                </p>
+                <p class="author-name">Johan</p>
+                <div class="stars" style="display: flex; gap: 4px;">
+                  <img src="assets/svg/full-star.svg" alt="star" />
+                  <img src="assets/svg/full-star.svg" alt="star" />
+                  <img src="assets/svg/full-star.svg" alt="star" />
+                  <img src="assets/svg/full-star.svg" alt="star" />
+                  <img src="assets/svg/empty-star.svg" alt="star" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End of Testimonials Section -->
 
-    <!-- FOOTER -->
-    <footer class="site-footer">
-      <div class="container-footer-newsletter">
-        <div class="container footer-newsletter">
-          <div class="newsletter-content">
-            <h3>Never miss a story.</h3>
-            <p>
-              Subscribe for daily news, trends & insights—delivered free every
-              weekday.
-            </p>
+    <!-- End of Testimonials Section -->
+    </div>
+
+    <!-- Subscripe Footer -->
+
+    <section id="newsletter-signup">
+      <div class="container">
+        <div class="newsletter-content">
+          <div class="newsletter-icon-wrapper">
+            <img src="assets/svg/signup.svg" alt="Newsletter icon" />
           </div>
-          <form class="newsletter-form">
-            <input
-              type="email"
-              placeholder="Your email address"
-              required
-              name="email"
-            />
-            <button type="submit">Subscribe</button>
+          <h4>Never Miss The Story</h4>
+          <p>
+            Subscribe for daily news, trends &amp; insights—delivered free every
+            weekday.
+          </p>
+          <form class="footer-subscribe-form">
+            <div class="footer-email-input-wrapper">
+              <img src="assets/svg/email.svg" alt="email icon" />
+              <input type="email" placeholder="Enter Yor Email" />
+              <button type="submit">Subscribe</button>
+            </div>
           </form>
         </div>
       </div>
+    </section>
 
+    <!-- End of Subscripe Footer -->
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
       <div class="container-footer-menus">
         <div class="container footer-menus">
           <div class="menu-col logo-col">
@@ -713,7 +916,7 @@
               /></a>
               <a href="#"
                 ><img
-                  src="assets/icons/instagram.svg"
+                  src="assets/icons/instagram.png"
                   alt="Instagram"
                   loading="lazy"
               /></a>
@@ -740,23 +943,25 @@
     <!-- END OF FOOTER -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-
-      // Testimonials Section
-      const swiper = new Swiper('.swiper', {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        navigation: {
-          nextEl: '.next-btn',
-          prevEl: '.prev-btn',
-        },
-        breakpoints: {
-          768: {
-            slidesPerView: 2
+        // Testimonials Section
+        const swiper = new Swiper(".swiper", {
+          slidesPerView: 1,
+          centeredSlides: true,
+          loop: true,
+          spaceBetween: 0,
+          navigation: {
+            nextEl: ".next-btn",
+            prevEl: ".prev-btn",
           },
-          1024: {
-            slidesPerView: 3
-          }
-          }
+          breakpoints: {
+            1133: {
+              slidesPerView: 3,
+              centeredSlides: true,
+              spaceBetween: 20,
+              loop: false,
+              initialSlide: 2,
+            },
+          },
         });
       });
     </script>
